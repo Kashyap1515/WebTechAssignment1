@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+ul.horizontal-list {
+  list-style: none;
+}
+ul.horizontal-list li {
+  display: inline-block;
+  padding: 0 0.5rem;
+  text-decoration: none;
+  min-width: 6rem;
+  text-align: center;
+
+}
+ul.horizontal-list li:not(:last-child) {
+  border-right: 1px solid black;
+}
