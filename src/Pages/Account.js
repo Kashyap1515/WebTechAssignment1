@@ -32,7 +32,7 @@ export default function Account({ formData, handleInputChange, handleSubmit }) {
                         <Form.Control type="text" name="zip" value={formData.zip} onChange={handleInputChange} required />
                     </Form.Group>
                     <br />
-                    <Button variant="primary" type="submit" onChange={handleSubmit}>{formData.id === 1 ? "Update" : "Add"}</Button>
+                    <Button variant="primary" type="submit" onChange={handleSubmit} style={{backgroundColor: '#069093', border: 'none'}}>{formData.id === 1 ? "Update" : "Add"}</Button>
                 </Form>
             </div>
         </>

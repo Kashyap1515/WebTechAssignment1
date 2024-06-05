@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import '../../App.css';
 import { useState } from 'react';
 import { products } from '../../data';
@@ -37,8 +37,8 @@ function Product({ addToCart }) {
                                             min="1"
                                         />
                                     </div>
-                                    <button className="btn btn-primary mt-4" style={{ marginLeft: 10 }} onClick={handleAddToCart}>
-                                        Add to Cart
+                                    <button className="btn btn-primary mt-4" style={{ marginLeft: 10, backgroundColor: '#069093', border: 'none' }} onClick={handleAddToCart}>
+                                        <Link to="/cart" className="nav-link">Add to Cart</Link>
                                     </button>
                                 </div>
                             </div>

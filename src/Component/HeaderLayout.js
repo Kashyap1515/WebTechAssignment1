@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
+import icon from '../images/icon.jpeg'
 
 const Navbar = ({ formData }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-custom px-3">
-      <Link className="navbar-brand" to="/">Kashyap's Shop</Link>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
+      <img src={icon} className="card-img" alt={"icon"} style={{ height: 30, width:30, objectFit: 'contain', marginRight:10}} />
+      <Link className="navbar-brand" to="/">LaptopHub</Link>
       <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">

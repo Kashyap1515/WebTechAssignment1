@@ -23,8 +23,8 @@ function Cart({ cartItems, changeQuantity, removeFromCart }) {
 
     return (
         <>
-            <div className="container mt-5">
-                <h2 className="text-center mb-4">Shopping Cart</h2>
+            <div className="container mt-2">
+                <h2 className="text-center mb-4">Your Cart</h2>
                 {cartItems.length === 0 ? (
                     <p>Your cart is empty.</p>
                 ) : (
@@ -69,7 +69,7 @@ function Cart({ cartItems, changeQuantity, removeFromCart }) {
                         </Table>
                         <div className="text-end">
                             <p>Total: ${calculateTotal()}</p>
-                            <Button variant="primary" onClick={completeOrder}>Complete Order</Button>
+                            <Button variant="primary" style={{ backgroundColor: '#069093', border: 'none' }} onClick={completeOrder}>Complete Order</Button>
                         </div>
                     </div>
                 )}
